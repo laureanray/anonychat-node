@@ -6,8 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "@types/express": "^4.17.6",
+    "@types/socket.io": "^2.1.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "socket.io": "^2.3.0",
     "typescript": "^3.8.3"
   },
   "scripts": {

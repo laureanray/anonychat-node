@@ -1,16 +1,9 @@
-import app from "./app";
+import http from "./app";
+import io from "./socket.io";
 
-
-/**
- * Start Express server.
- */
-const server = app.listen(app.get("port"), () => {
-    console.log(
-        "  App is running at http://localhost:%d in %s mode",
-        app.get("port"),
-        app.get("env")
-    );
-    console.log("  Press CTRL-C to stop\n");
+const server = http.listen(3000, () => {
+    io.init();
+    console.log("Listening!");
 });
 
 export default server;
