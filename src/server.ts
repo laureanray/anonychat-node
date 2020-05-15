@@ -1,7 +1,7 @@
 import http from "./app";
 import io from "./socket.io";
 
-const server = http.listen(3000, () => {
+const server = http.listen(8080, () => {
     io.init();
     console.log("Listening!");
 });
